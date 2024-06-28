@@ -1,0 +1,8 @@
+<odoo>
+    <data noupdate="0">
+    <record id="access_important_link_user" model="ir.rule">
+        <field name="name">Access Important Link Admin</field>
+    </record>
+    </data>
+    
+</odoo>

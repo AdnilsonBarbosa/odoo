@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Kanban herança-->
+ 
+
+    <record id="view_employee_form_inherited" model="ir.ui.view">
+        <field name="name">hr.employee.form.inherited</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="before">
+                <group string="Custom Information">
+
+                    <field name="anonsc" widget = "Mes Aniversario"></field>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

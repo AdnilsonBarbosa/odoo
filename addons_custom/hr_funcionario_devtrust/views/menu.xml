@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Menu principal para o módulo de Funcionários -->
+    <menuitem id="menu_funcionario_dev_root" name="Funcionários" sequence="0"/>
+
+    <!-- Ação para abrir a lista de funcionários -->
+    <record id="action_funcionario_dev_employee" model="ir.actions.act_window">
+        <field name="name">Funcionários</field>
+        <field name="res_model">hr.employee</field>
+        <field name="view_mode">kanban,tree,form,pivot</field>
+    </record>
+      <!-- Ação para abrir o menu departamento no menu pricipal da heranca ja herdada -->
+     <record id="action_funcionario_dev_depart" model="ir.actions.act_window">
+        <field name="name">Departamentos</field>
+        <field name="res_model">hr.department</field>
+        <field name="view_mode">kanban,tree,form</field>
+   
+    </record>
+ 
+
+    <!-- Submenu para exibir a lista de funcionários -->
+    <menuitem
+     id="menu_funcionario_dev_employee" name="Funcionários" parent="menu_funcionario_dev_root" action="action_funcionario_dev_employee" sequence="1"/>
+      
+    <menuitem id="menu_funcionario_dev_depart" name="Departamentos" parent="menu_funcionario_dev_root" action="action_funcionario_dev_depart" sequence="1"/>
+
+  
+</odoo>

@@ -1,22 +1,23 @@
 from  odoo import models, fields
 
-#crbelaiacao da tabela categorias de links
+
+from odoo import models, fields
+
+
 class LinkCategory(models.Model):
-    _name = 'link.category'  #nome da base de dados
-    _description = 'Link Category'  #descricao da base de dados
+    _name = 'link.category'
+    _description = 'Link Category'
 
     name = fields.Char(string='Category Name', required=True)
     
-    
-   #criacao da tabela important.link 
 class Devlinks(models.Model):
-    _name = 'important.link' #nome da base de dados
-    _description = 'Links devtrust' #descricao da base de dados
+    _name = 'important.link'
+    _description = 'Links devtrust'
     
-    #campos da tabela
+    
     image_1920 =fields.Image("imagem")
     nome = fields.Char(string='Título', required=True)
-    url = fields.Html(string='URL', required=True, help="Usa /  depois seleciona a opção do botão e depois preeenche os campos ")
+    url = fields.Html(string='URL', required=True, help="Insira o link completo, por exemplo: <a href='http://www.example.com'>Link</a>")
     descricao = fields.Text(string='Descrição')
     category_id = fields.Many2one('link.category', string='Category')
 

@@ -1,7 +1,7 @@
 {
     'name': 'Important Links',
     'version': '1.0',
-    'category': 'Human Resources/Important Links',
+    'category': 'Human Resources',
     'summary':'Este App serve para listar todos os links importante da empresa devtrust',
     'author': 'Anilson Barbosa, Amadou veiga, Edmilson Fernandes',
     'company':'DevTrust Consulting',
@@ -18,11 +18,4 @@
        
     ],
     'application': True,
-    'installable': True,
-    
-
-   
-    'license': 'LGPL-3',
-
-    
 }

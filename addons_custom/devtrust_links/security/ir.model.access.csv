@@ -1,6 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_important_link_admin,access.important.link.user,model_important_link,,1,1,1,1
-access_important_link_user,access.important.link.user,model_important_link,,1,0,0,0
+access_important_link_user,access.important.link.user,model_important_link,group_important_link_admin,1,1,1,1
+access_important_link_user,access.important.link.user,model_important_link,group_important_link_user,1,0,0,0
 access_link_category_user,access.link.category.user,model_link_category,,1,1,1,1
+
 
 

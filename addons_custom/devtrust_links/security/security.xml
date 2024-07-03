@@ -2,7 +2,7 @@
 <odoo>
     <data noupdate="0">
         <record model="ir.module.category" id="module_category_links">
-            <field name="name">Dev trust links</field>
+            <field name="name">Devtrust links</field>
             <field name="description">Acesso para gestao de links da Devtrust</field>
             <field name="sequence">45</field>    
         </record>
@@ -15,31 +15,17 @@
         <record id="group_important_link_user" model="res.groups">
             <field name="name">Devtrust link acesso para ver os links</field>
             <field name="category_id" ref="module_category_links"/>
-           
         </record>
-<!-- 
-        <record id="rule_link_category_all" model="ir.rule">
-            <field name="name">Link Category: All can read</field>
-            <field name="model_id" ref="module_category_links"/>
-            <field name="domain_force">[(1, '=', 1)]</field>
-            <field name="groups" eval="[(4, ref('group_important_link_user')), (4, ref('group_important_link_admin'))]"/>
+
+        <record model="ir.rule" id="rule_user_associated_records">
+            <field name="name">Acesso a Registros Associados aos Usuários</field>
+            <field name="model_id" ref="model_important_link"/>
+            <field name="domain_force">[('user_ids', 'in', [user.id])]</field>
             <field name="perm_read" eval="True"/>
-            <field name="perm_write" eval="False"/>
+            <field name="perm_write" eval="True"/>
             <field name="perm_create" eval="False"/>
             <field name="perm_unlink" eval="False"/>
         </record>
-
-        <record id="rule_important_link_all" model="ir.rule">
-            <field name="name">Important Link: All can read</field>
-            <field name="model_id" ref="module_category_links"/>
-            <field name="domain_force">[(1, '=', 1)]</field>
-            <field name="groups" eval="[(4, ref('group_important_link_user')), (4, ref('group_important_link_admin'))]"/>
-            <field name="perm_read" eval="True"/>
-            <field name="perm_write" eval="False"/>
-            <field name="perm_create" eval="False"/>
-            <field name="perm_unlink" eval="False"/>
-        </record>
-
-        -->
+      
     </data>
 </odoo>

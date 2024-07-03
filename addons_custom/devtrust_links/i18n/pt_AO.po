@@ -1,0 +1,76 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* devtrust_links
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-02 12:23+0000\n"
+"PO-Revision-Date: 2024-07-02 12:23+0000\n"
+"Last-Translator: Your Name <your.email@example.com>\n"
+"Language-Team: Your Team <your.team@example.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: devtrust_links
+#: model:ir.module.category,description:devtrust_links.module_category_links
+msgid "Access to manage Devtrust links"
+msgstr "Acesso para gestão de links da Devtrust"
+
+#. module: devtrust_links
+#: model:ir.model.fields,field_description:devtrust_links.field_important_link__descricao
+msgid "Descrição"
+msgstr "Descrição"
+
+#. module: devtrust_links
+#: model:res.groups,name:devtrust_links.group_important_link_admin
+msgid "Devtrust link access to register links"
+msgstr "Acesso para registrar links da Devtrust"
+
+#. module: devtrust_links
+#: model:res.groups,name:devtrust_links.group_important_link_user
+msgid "Devtrust link access to view links"
+msgstr "Acesso para visualizar links da Devtrust"
+
+#. module: devtrust_links
+#: model:ir.model.fields,help:devtrust_links.field_important_link__url
+msgid ""
+"Insira o link completo, por exemplo: <a "
+"href='http://www.example.com'>Link</a>"
+msgstr ""
+"Insira o link completo, por exemplo: <a "
+"href='http://www.example.com'>Link</a>"
+
+#. module: devtrust_links
+#: model_terms:ir.ui.view,arch_db:devtrust_links.view_important_link_form
+#: model_terms:ir.ui.view,arch_db:devtrust_links.view_important_link_tree
+msgid "Important Links"
+msgstr "Links Importantes"
+
+#. module: devtrust_links
+#: model:ir.model.fields,field_description:devtrust_links.field_important_link__nome
+msgid "Título"
+msgstr "Título"
+
+#. module: devtrust_links
+#: model:ir.actions.act_window,name:devtrust_links.action_important_link
+msgid "My links"
+msgstr "Meus links"
+
+#. module: devtrust_links
+#: model_terms:ir.ui.view,arch_db:devtrust_links.view_employee_filter
+msgid "Nome"
+msgstr "Nome"
+
+#. module: devtrust_links
+#: model:ir.model.fields,field_description:devtrust_links.field_important_link__url
+msgid "URL"
+msgstr "URL"
+
+#. module: devtrust_links
+#: model:ir.model.fields,field_description:devtrust_links.field_important_link__image_1920
+msgid "imagem"
+msgstr "imagem"

@@ -15,21 +15,10 @@
                 <field name="nome"/>
                 <separator/>
                 
-                <!-- 
-                <filter name="my_team" string="My Team" domain="[('parent_id.user_id', '=', uid)]"/>
-                <filter name="my_department" string="My Department" domain="[('member_of_department', '=', True)]"/>
-                <separator/>
-                <filter name="newly_hired" string="Newly Hired" domain="[('newly_hired', '=', True)]"/>
-                <separator/>
-                <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
-                <group expand="0" string="Group By">
-                    <filter name="group_manager" string="Manager" domain="[]" context="{'group_by': 'parent_id'}"/>
-                    <filter name="group_department" string="Department" domain="[]" context="{'group_by': 'department_id'}"/>
-                    <filter name="group_job" string="Job" domain="[]" context="{'group_by': 'job_id'}"/>
-                    <filter name="group_start" string="Start Date" domain="[]" context="{'group_by': 'create_date'}"/>
-                    <filter name="group_category_ids" string="Tags" domain="[]" context="{'group_by': 'category_ids'}"/>
-                </group>
-                -->
+
+
+                
+                 <!-- Filtros-->
                 
             </search>
         </field>
@@ -70,18 +59,35 @@
                         </t>
                         
                         <!-- Detalhes do kanban -->
+
+                        <div class="oe_kanban_content o_hr_employee_kanban_bottom position-absolute c bottom-4 start-0 end-0 top-1">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="left-header-content">
+                                    <!-- Conteúdo do cabeçalho à esquerda -->
+                                </div>
+                                <div class="Important link info icon" style="width: 30px;  color:#2196F3">
+                                    <span class="o_icon_tooltip" t-att-title="record.descricao.raw_value">
+                                        <i class="fa fa-info-circle fa-lg"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="o_kanban_record_bottom mt-6">
+                                <div class="oe_kanban_bottom_left"></div>
+                                <div class="oe_kanban_bottom_right"></div>
+                            </div>
+                        </div>
+                        
                         <div class="oe_kanban_details">
                             <div class="o_kanban_record_top">
                                 <div class="o_kanban_record_headings">
+
                                     <strong class="o_kanban_record_title">
                                         <field name="nome" placeholder="Nome do link importante"/> 
                                     </strong>
                                 </div>
-                            </div>
+                            </div> 
+                           
                             <ul>
-                                <li>
-                                    <field name="descricao" class="o_text_overflow"/>
-                                </li>
                                 <li>
                                     <field name="url" class="o_force_ltr"/>
                                 </li>
@@ -137,6 +143,7 @@
                         <field name="url"/>
                         <field name="descricao"/>
                         <field name="category_id" />
+                        <field name="user_ids"/>
                     </group>
                 </sheet>
             </form>

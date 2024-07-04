@@ -17,15 +17,17 @@
             <field name="category_id" ref="module_category_links"/>
         </record>
 
-        <record model="ir.rule" id="rule_user_associated_records">
+        <record id="rule_user_associated_records" model="ir.rule">
             <field name="name">Acesso a Registros Associados aos Usuários</field>
             <field name="model_id" ref="model_important_link"/>
             <field name="domain_force">[('user_ids', 'in', [user.id])]</field>
             <field name="perm_read" eval="True"/>
-            <field name="perm_write" eval="True"/>
+            <field name="perm_write" eval="False"/>
             <field name="perm_create" eval="False"/>
             <field name="perm_unlink" eval="False"/>
         </record>
+        
+        
       
     </data>
 </odoo>

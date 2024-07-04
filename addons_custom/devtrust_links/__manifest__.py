@@ -6,6 +6,7 @@
     'author': 'Anilson Barbosa, Amadou veiga, Edmilson Fernandes',
     'company':'DevTrust Consulting',
     'website':'https://www.devtrust.cv/',
+    'web_icon': 'static/description/icon.png',
     
     'depends': ['base'],
     'data': [
@@ -13,6 +14,7 @@
         'views/devlinks_views.xml',
         'security/ir.model.access.csv',
         'security/security.xml'
+        
         
          
        

@@ -8,6 +8,7 @@
         <field name="arch" type="xml">
             <search string="Links">
                 <field name="nome" string="Nome" filter_domain="['|', ('nome', 'ilike', self), ('nome', 'ilike', self)]"/>
+                <field name="category_id" string="Categoria" filter_domain="['|', ('category_id', 'ilike', self), ('category_id', 'ilike', self)]"/>
                 <searchpanel>
                     <field name="category_id"  icon="fa fa-list" enable_counters="1"/>
         
@@ -126,6 +127,8 @@
                 <field name="nome"/>
                 <field name="url"/>
                 <field name="category_id"  readonly="1" optional="show"/>
+                <field name="user_ids"/>
+
             </tree>
         </field>
     </record>

@@ -123,7 +123,7 @@
         <field name="name">important.link.tree</field>
         <field name="model">important.link</field>
         <field name="arch" type="xml">
-            <tree string="Important Links">
+            <tree string="IDiretórios de apps">
                 <field name="nome"/>
                 <field name="url"/>
                 <field name="category_id"  readonly="1" optional="show"/>
@@ -137,7 +137,7 @@
         <field name="name">important.link.form</field>
         <field name="model">important.link</field>
         <field name="arch" type="xml">
-            <form string="Important Links">
+            <form string="Diretórios de apps">
                 <sheet>
                     <group>
               
@@ -161,6 +161,6 @@
     </record>
 
     <!-- Menu items -->
-    <menuitem id="menu_important_link" name="Devtrust Links" sequence="10"/>
-    <menuitem id="submenu_important_link" name="Links" parent="menu_important_link" action="action_important_link"/>
+    <menuitem id="menu_important_link" name="Diretório de apps" sequence="10"/>
+    <menuitem id="submenu_important_link" name="apps" parent="menu_important_link" action="action_important_link"/>
 </odoo>

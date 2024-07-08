@@ -1,5 +1,5 @@
 {
-    'name': 'Important Links',
+    'name': 'Diretorio de apps',
     'version': '1.0',
     'category': 'Human Resources',
     'summary':'Este App serve para listar todos os links importante da empresa devtrust',

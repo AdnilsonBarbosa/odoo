@@ -27,13 +27,13 @@ msgstr "Description"
 
 #. module: devtrust_links
 #: model:ir.module.category,name:devtrust_links.module_category_links
-msgid "Devtrust links"
-msgstr "Links da Devtrust"
+msgid "App directories"
+msgstr "Diretórios de apps"
 
 #. module: devtrust_links
 #: model:ir.ui.menu,name:devtrust_links.menu_important_link
-msgid "Devtrust Links"
-msgstr "Links da Devtrust"
+msgid "App directories"
+msgstr "Diretórios de apps"
 
 #. module: devtrust_links
 #: model:res.groups,name:devtrust_links.group_important_link_admin

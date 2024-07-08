@@ -47,8 +47,8 @@ msgstr ""
 #. module: devtrust_links
 #: model_terms:ir.ui.view,arch_db:devtrust_links.view_important_link_form
 #: model_terms:ir.ui.view,arch_db:devtrust_links.view_important_link_tree
-msgid "Important Links"
-msgstr "Links Importantes"
+msgid "App directories"
+msgstr "Diretórios de apps"
 
 #. module: devtrust_links
 #: model:ir.model.fields,field_description:devtrust_links.field_important_link__nome
@@ -57,8 +57,8 @@ msgstr "Título"
 
 #. module: devtrust_links
 #: model:ir.actions.act_window,name:devtrust_links.action_important_link
-msgid "My links"
-msgstr "Meus links"
+msgid "My Apps"
+msgstr "Meus Apps"
 
 #. module: devtrust_links
 #: model_terms:ir.ui.view,arch_db:devtrust_links.view_employee_filter

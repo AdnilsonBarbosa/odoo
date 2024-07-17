@@ -131,7 +131,7 @@ QUnit.test("can post a note on a record thread", async (assert) => {
 QUnit.test("No attachment loading spinner when creating records", async () => {
     const { openFormView } = await start();
     openFormView("res.partner");
-    await contains("button[aria-label='Attach files']");
+    await contains("button[aria-label='']");
     await contains("button[aria-label='Attach files'] .fa-spin", { count: 0 });
 });
 

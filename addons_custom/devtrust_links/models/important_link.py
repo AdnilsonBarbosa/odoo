@@ -21,7 +21,7 @@ class Devlinks(models.Model):
     descricao = fields.Text(string='Descrição')
     category_id = fields.Many2one('link.category', string='Categoria')
     user_ids = fields.Many2many('res.users', string='Utizadores Associados')
-
+    
 
     
     

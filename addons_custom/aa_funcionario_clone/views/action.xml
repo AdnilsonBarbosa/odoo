@@ -1,0 +1,27 @@
+<odoo>
+    <!-- Menu principal para o módulo DevTrust -->
+    <menuitem id="menu_funcionario_dev_root" name="DevTrust" sequence="10"/>
+
+    <!-- Ação para abrir a lista de funcionários em Kanban -->
+    <record id="action_funcionario_dev_employee" model="ir.actions.act_window">
+        <field name="name">Funcionários</field>
+        <field name="res_model">hr.employee</field>
+        <field name="view_mode">kanban,form</field>
+    </record>
+
+    <!-- Ação para abrir a lista de departamentos em Kanban -->
+    <record id="action_departamento_dev_employee" model="ir.actions.act_window">
+        <field name="name">Departamento</field>
+        <field name="res_model">hr.department</field>
+        <field name="view_mode">kanban,tree,graph</field>
+    </record>
+
+
+
+    <!-- Submenu para exibir a lista de funcionários -->
+    <menuitem id="menu_funcionario_dev_employee" name="Funcionários" parent="menu_funcionario_dev_root" action="action_funcionario_dev_employee" sequence="20"/>
+
+    <!-- Submenu para exibir a lista de departamentos -->
+    <menuitem id="menu_departamento_dev_employee" name="Departamento" parent="menu_funcionario_dev_root" action="action_departamento_dev_employee" sequence="30"/>
+
+</odoo>

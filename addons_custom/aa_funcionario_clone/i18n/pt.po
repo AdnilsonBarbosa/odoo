@@ -1,0 +1,75 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* aa_funcionario_clone
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-26 16:00+0000\n"
+"PO-Revision-Date: 2024-06-26 16:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: aa_funcionario_clone
+#: model_terms:ir.ui.view,arch_db:aa_funcionario_clone.discuss_channel_view_form
+msgid "Auto Subscribe Departments"
+msgstr ""
+
+#. module: aa_funcionario_clone
+#: model_terms:ir.ui.view,arch_db:aa_funcionario_clone.view_employee_filter_inherited
+msgid "Custom Employees"
+msgstr ""
+
+#. module: aa_funcionario_clone
+#: model:ir.model.fields,field_description:aa_funcionario_clone.field_hr_employee__custom_field
+#: model_terms:ir.ui.view,arch_db:aa_funcionario_clone.view_employee_form_inherited
+msgid "Custom Field"
+msgstr ""
+
+#. module: aa_funcionario_clone
+#: model:ir.actions.act_window,name:aa_funcionario_clone.action_departamento_dev_employee
+#: model:ir.ui.menu,name:aa_funcionario_clone.menu_departamento_dev_employee_kanban
+msgid "Departamento"
+msgstr "Departamento"
+
+#. module: aa_funcionario_clone
+#: model_terms:ir.ui.view,arch_db:aa_funcionario_clone.view_employee_form_outro_inherited
+msgid "Detalhes"
+msgstr "Detalhes"
+
+#. module: aa_funcionario_clone
+#: model:ir.ui.menu,name:aa_funcionario_clone.menu_funcionario_dev_root
+msgid "DevTrust"
+msgstr "DevTrust"
+
+#. module: aa_funcionario_clone
+#: model:ir.model,name:aa_funcionario_clone.model_hr_employee
+msgid "Employee"
+msgstr "Funcionário"
+
+#. module: aa_funcionario_clone
+#: model:ir.actions.act_window,name:aa_funcionario_clone.action_funcionario_dev_employee
+#: model:ir.ui.menu,name:aa_funcionario_clone.menu_funcionario_dev_employee_kanban
+msgid "Funcionários"
+msgstr "Funcionários"
+
+#. module: aa_funcionario_clone
+#: model:ir.model.fields,field_description:aa_funcionario_clone.field_hr_employee__birth_island
+#: model_terms:ir.ui.view,arch_db:aa_funcionario_clone.view_employee_form_inherited
+msgid "Ilha de Nascimento"
+msgstr "Ilha de Nascimento"
+
+#. module: aa_funcionario_clone
+#: model:ir.model.fields,field_description:aa_funcionario_clone.field_hr_employee__num_cam
+msgid "Numero de Camisa"
+msgstr "Numero de Camisa"
+
+#. module: aa_funcionario_clone
+#: model_terms:ir.ui.view,arch_db:aa_funcionario_clone.view_employee_form_outro_inherited
+msgid "Outros"
+msgstr "Outros"

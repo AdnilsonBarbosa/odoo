@@ -1,0 +1,65 @@
+<odoo>
+    <!-- Herdar e modificar o formulário de funcionário -->
+    <record id="view_employee_form_inherited" model="ir.ui.view">
+        <field name="name">hr.employee.form.inherited</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <!-- Adicionar um campo  -->
+            <xpath expr="//field[@name='birthday']" position="after">
+                <field name="concelho"/>
+            </xpath>
+            <xpath expr="//field[@name='work_location_id']" position="after">
+                <field name="nosi_p"/>
+            </xpath>
+
+
+            <!-- Editar um campo -->
+            <xpath expr="//label[@for='private_street']" position="attributes">
+                <attribute name="string">Morada</attribute>
+            </xpath>
+            <xpath expr="//field[@name='private_street']" position="attributes">
+                <attribute name="placeholder">Morada</attribute>
+            </xpath>
+            <xpath expr="//field[@name='place_of_birth']" position="replace">
+                <field name="birth_island"/>
+            </xpath>
+            <xpath expr="//field[@name='identification_id']" position="attributes">
+                <attribute name="string">BI</attribute>
+            </xpath>
+
+
+            <!-- Ocultando um campo -->
+            <xpath expr="//field[@name='mobile_phone']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='work_phone']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='coach_id']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='active']" position="attributes">
+                <attribute name="invisible">0</attribute>
+            </xpath>
+        </field>
+    </record>
+
+
+    <record id="view_employee_form_outro_inherited" model="ir.ui.view">
+        <field name="name">hr.employee.form.inherited</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='hr_settings']" position="after">
+                <page name="num_cam" string="Outros">
+                    <group string="Detalhes">
+                        <field name="num_cam"/>
+                    </group>
+                </page>
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>

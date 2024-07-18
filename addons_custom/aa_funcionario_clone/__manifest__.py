@@ -10,10 +10,12 @@
     """,
     'author': 'Amadou Veiga',
     'website': '',
-    'depends': ['base', 'hr', 'mail'],
+    'depends': ['base', 'hr', 'hr_skills', 'mail'],
     'data': [
         'views/action.xml',
         'views/my_view.xml',
+       
+        
 
     ],
     'license': 'LGPL-3',

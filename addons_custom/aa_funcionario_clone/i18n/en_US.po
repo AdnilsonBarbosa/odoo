@@ -44,7 +44,7 @@ msgstr "Details"
 
 #. module: aa_funcionario_clone
 #: model:ir.ui.menu,name:aa_funcionario_clone.menu_funcionario_dev_root
-msgid "DevTrust"
+msgid ""
 msgstr ""
 
 #. module: aa_funcionario_clone

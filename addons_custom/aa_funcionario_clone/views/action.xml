@@ -6,7 +6,7 @@
     <record id="action_funcionario_dev_employee" model="ir.actions.act_window">
         <field name="name">Funcionários</field>
         <field name="res_model">hr.employee</field>
-        <field name="view_mode">kanban,form</field>
+        <field name="view_mode">kanban,form,tree,graph,pivot,hierarchy</field>
     </record>
 
     <!-- Ação para abrir a lista de departamentos em Kanban -->
@@ -16,7 +16,21 @@
         <field name="view_mode">kanban,tree,graph</field>
     </record>
 
+    <!-- Ação para abrir a lista de tipos de habilidades -->
+    <record id="hr_skill_type_action" model="ir.actions.act_window">
+        <field name="name">Skill Types</field>
+        <field name="res_model">hr.skill.type</field>
+        <field name="view_mode">list,form</field>
+    </record>
 
+    <!-- Ação para abrir as configurações -->
+    <record id="action_open_settings" model="ir.actions.act_window">
+        <field name="name">Settings</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="context" eval="{'module': 'general_settings', 'bin_size': False}"/>
+    </record>
 
     <!-- Submenu para exibir a lista de funcionários -->
     <menuitem id="menu_funcionario_dev_employee" name="Funcionários" parent="menu_funcionario_dev_root" action="action_funcionario_dev_employee" sequence="20"/>
@@ -24,4 +38,9 @@
     <!-- Submenu para exibir a lista de departamentos -->
     <menuitem id="menu_departamento_dev_employee" name="Departamento" parent="menu_funcionario_dev_root" action="action_departamento_dev_employee" sequence="30"/>
 
+    <!-- Submenu para abrir as configurações -->
+    <menuitem id="hr_menu_configuration" name="Settings" parent="menu_funcionario_dev_root" sequence="40" action="action_open_settings"/>
+
+    <!-- Submenu para exibir a lista de tipos de habilidades dentro de "Settings" -->
+    <menuitem id="hr_skill_type_menu" name="Skill Types" action="hr_skill_type_action" parent="hr_menu_configuration" sequence="7" groups="hr.group_hr_user"/>
 </odoo>

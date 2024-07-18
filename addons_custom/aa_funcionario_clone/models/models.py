@@ -1,8 +1,11 @@
 from odoo import models, fields
 
 class MyModel(models.Model):
-    _inherit = 'hr.employee'
     
+    _inherit = 'hr.employee',
+  # Keep the same name
+    
+
 
     # Adicione mais campos conforme necessário
     birth_island = fields.Selection([
@@ -23,3 +26,13 @@ class MyModel(models.Model):
         ('Sim', 'Sim'),
         ('Não', 'Não')
     ], string="Passagem Pela Nosi")
+    
+    
+    
+class setings(models.Model):
+    _name = 'custom.settings'
+    _inherit = 'res.config.settings' 
+
+class skill(models.Model):
+    
+    _inherit = 'hr.skill.type'
